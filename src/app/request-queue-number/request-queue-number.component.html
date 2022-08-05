@@ -1,0 +1,26 @@
+<div>
+    <div>
+        <app-navbar></app-navbar>
+    </div>
+
+        <div class="col-lg-4 col-md-6 col-sm-6" style="margin-bottom: 15px;" *ngFor="let item of dataCustomer">
+            <mat-card class="example-card4" >
+            <h4 style="margin-bottom: 0px;text-align: center;">{{item.customerName}} </h4>
+            <mat-divider inset style=" border: black solid;"></mat-divider>
+            <h3 style="margin-top: 0px;text-align: center;">Nomor Antrian Anda</h3>
+            <h1 style="text-align: center;margin: 0px;font-size: 50px;">{{item.customerID}} </h1>
+            <div style="padding: 16px 12px;">
+                <img mat-card-image src="https://static.vecteezy.com/system/resources/previews/001/199/360/non_2x/barcode-png.png" alt="Photo of a Shiba Inu" style="height: 100px;">
+            </div>
+            <mat-divider inset style=" border: black solid;"></mat-divider>
+            <mat-card-content>
+              <p style="text-align: center;">
+                Budayakan antri untuk kenyamanan bersama.
+              </p>
+              <p style="text-align: center;">
+               Terima kasih atas kunjungan anda.
+              </p>
+            </mat-card-content>
+            </mat-card>
+          </div>
+</div>

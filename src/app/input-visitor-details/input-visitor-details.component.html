@@ -1,0 +1,73 @@
+<div>
+    <div>
+        <app-navbar></app-navbar>
+    </div>
+
+    <div class="container"  style="margin-left: 50px;">
+            <form [formGroup]="formInput" >
+            <div class="row">
+                <div class="col-30" style="margin-right: 12px;">
+                        <select id="customerID" name="customerID" formControlName="customerID">
+                            <option value="C005">C005</option>
+                            <option value="C006">C006</option>
+                          </select>
+                </div>
+                <div class="col-30">
+                    <input type="text" id="customerName" name="customerName" formControlName="customerName" placeholder="Customer name">
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-30" style="margin-right: 12px;">
+                    <input type="text" id="contact" name="contact" formControlName="contact" placeholder="Contact No">
+                </div>
+                <div class="col-30">
+                  <input type="text" id="pic" name="pic" formControlName="pic" placeholder="Pic">
+                </div>
+              </div>
+
+            <div class="row">
+              <div class="col-30" style="margin-right: 12px;">
+                <input type="text" id="city" name="city" formControlName="city" placeholder="City">
+              </div>
+              <div class="col-30">
+                <input type="text" id="region" name="region" formControlName="region" placeholder="Region">
+              </div>
+            </div>
+
+            <div class="row">
+                <div class="col-30" style="margin-right: 12px;">
+                    <textarea id="address" name="address" formControlName="address" placeholder="Address" style="height:100px"></textarea>
+                </div>
+                <div class="col-30">
+                  <textarea id="address2" name="address2" formControlName="address2" placeholder="Address 2" style="height:100px"></textarea>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-30" style="margin-right: 12px;">
+                  <input type="text" id="province" name="province" formControlName="province" placeholder="Province">
+                </div>
+                <div class="col-30">
+                  <input type="text" id="remark" name="remark" formControlName="remark" placeholder="Remark">
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-30" style="margin-right: 12px;">
+                  <input type="text" id="kuota" name="kuota" formControlName="kuota" placeholder="Kuota">
+                </div>
+                <div class="col-30">
+                  <input type="text" id="npwp" name="npwp" formControlName="npwp" placeholder="NPWP">
+                </div>
+            </div>
+
+            <br>
+            <div class="row">
+              <input type="submit" value="Submit" (click)="addData()">
+              <input type="submit" value="Cancel" (click)="back()">
+            </div>
+            </form>
+    </div>
+          
+</div>
